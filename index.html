@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shivraj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+  <h1>Life-21-Pro</h1>
+  <h3>Level: <span id="level">1</span></h3>
+
+  <div class="bar-container">
+    <p>Money 💰</p>
+    <div class="bar"><div id="moneyBar"></div></div>
+
+    <p>Happiness 😊</p>
+    <div class="bar"><div id="happinessBar"></div></div>
+
+    <p>Career 📈</p>
+    <div class="bar"><div id="careerBar"></div></div>
+  </div>
+
+  <p id="eventText">Make your move!</p>
+  <p>⏳ Time: <span id="timer">10</span></p>
+
+  <div class="buttons">
+    <button onclick="choose('business')">Start Business</button>
+    <button onclick="choose('study')">Study</button>
+    <button onclick="choose('party')">Party</button>
+    <button onclick="choose('love')">Love</button>
+  </div>
+
+  <button class="restart" onclick="restartGame()">Restart</button>
+
+</div>
+<audio id="clickSound" src="click.mp3"></audio>
+<audio id="levelSound" src="click.mp3"></audio>
+<audio id="gameOverSound" src="click.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
